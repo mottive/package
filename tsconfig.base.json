@@ -16,9 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mottive": ["packages/test/src/index.ts"],
       "@mottive/engine": ["packages/engine/src/index.ts"],
-      "@mottive/error-vault": ["packages/error-vault/src/index.ts"],
       "@mottive/messages": ["packages/messages/src/index.ts"],
       "@mottive/microservice": ["packages/microservice/src/index.ts"]
     }

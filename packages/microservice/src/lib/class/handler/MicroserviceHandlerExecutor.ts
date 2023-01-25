@@ -1,7 +1,7 @@
 
 import { Handler, Package } from "@mottive/messages";
 import { Type } from "@mottive/engine";
-import { ErrorVault } from "@mottive/error-vault";
+//import { ErrorVault } from "@mottive/error-vault";
 
 export class MicroserviceHandlerExecutor{
 
@@ -31,7 +31,8 @@ export class MicroserviceHandlerExecutor{
             )
 
         }catch(e){
-            ErrorVault.instance().add(e)
+            console.log('Error:',e)
+            //ErrorVault.instance().add(e)
         }
 
     }

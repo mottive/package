@@ -1,6 +1,6 @@
 {
   "name": "@mottive/microservice",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "commonjs",
   "publishConfig": {
     "access": "public"
@@ -12,5 +12,9 @@
   },
   "author": {
     "name": "Bruno C."
+  },
+  "dependencies": {
+    "@mottive/engine": "*",
+    "@mottive/messages": "*"
   }
 }
