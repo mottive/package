@@ -1,0 +1,33 @@
+{
+  "name": "error-vault",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/error-vault/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/error-vault",
+        "main": "packages/error-vault/src/index.ts",
+        "tsConfig": "packages/error-vault/tsconfig.lib.json",
+        "assets": ["packages/error-vault/*.md"]
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node tools/scripts/publish.mjs error-vault {args.ver} {args.tag}"
+      },
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/error-vault/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

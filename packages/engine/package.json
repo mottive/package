@@ -1,0 +1,16 @@
+{
+  "name": "@mottive/engine",
+  "version": "0.0.2",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mottive/pack",
+    "directory": "packages/engine"
+  },
+  "author": {
+    "name": "Bruno C."
+  }
+}

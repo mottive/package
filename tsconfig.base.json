@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mottive": ["packages/test/src/index.ts"],
+      "@mottive/engine": ["packages/engine/src/index.ts"],
+      "@mottive/error-vault": ["packages/error-vault/src/index.ts"],
+      "@mottive/messages": ["packages/messages/src/index.ts"],
+      "@mottive/microservice": ["packages/microservice/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

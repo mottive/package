@@ -1,0 +1,16 @@
+{
+  "name": "@mottive/messages",
+  "version": "0.0.2",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mottive/pack",
+    "directory": "packages/messages"
+  },
+  "author": {
+    "name": "Bruno C."
+  }
+}
