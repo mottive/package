@@ -17,4 +17,4 @@ export * from './lib/constants/MessageTypes';
 export * from './lib/test';
 
 export * from './lib/Types';
-export * as functions from './lib/script';
+export * from './lib/script';
