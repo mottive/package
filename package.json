@@ -2,7 +2,10 @@
   "name": "mottive-pack",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "publish:all": "cd dist/packages && cd engine && npm publish --access=public && cd ../messages && npm publish --access=public && cd ../microservice && npm publish --access=public",
+    "build:all": "npx nx build engine && npx nx build messages && npx nx build microservice"
+  },
   "dependencies": {
     "cote": "^1.0.3",
     "dayjs": "^1.11.7",
