@@ -1,0 +1,8 @@
+import { types } from '@mottive/engine';
+import { Command } from '@mottive/messages';
+
+export class {{className}} extends Command{
+
+    name = '{{commandPath}}';
+    input = types.any()
+}

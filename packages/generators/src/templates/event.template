@@ -1,0 +1,12 @@
+import { Handler } from '@mottive/messages';
+import * as messages from '@idiomas/messages';
+
+export class {{className}} extends Handler<{{commandClass}}>{
+
+    message = {{commandClass}}
+
+    async handle(){
+
+    }
+
+}
