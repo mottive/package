@@ -23,3 +23,5 @@ export * from './types/UUIDString'
 //
 export * as types from "./classes/Zod"
 export * from './classes/Currency'
+export * from './classes/Date'
+export * as array from './classes/Array'
