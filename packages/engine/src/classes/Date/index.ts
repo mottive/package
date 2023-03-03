@@ -2,5 +2,5 @@ import * as dayjs from 'dayjs'
 
 export const date = dayjs.Dayjs
 
-let a = new date()
-a.add()
+const a = new date()
+a.add(1, 'day')
