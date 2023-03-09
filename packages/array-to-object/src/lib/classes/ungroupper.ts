@@ -13,7 +13,7 @@ export class Ungroupper{
 
   unmake(){
     
-    const set = []
+    const set:Array<any> = []
     const level = this.fetchMapLevel(this.map)
 
     this.fetchObjectInRow(set, this.data, this.map, level.group)

@@ -1,6 +1,6 @@
 {
   "name": "@mottive/engine",
-  "version": "0.0.8",
+  "version": "0.0.13",
   "type": "commonjs",
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
     "uuid": "^9.0.0",
     "dayjs": "^1.11.7",
     "dinero.js": "^1.9.1",
-    "@mottive/array-to-object": "^0.0.1"
+    "@mottive/array-to-object": "^0.0.2"
   },
   "devDependencies":{
   }
