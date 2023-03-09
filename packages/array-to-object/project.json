@@ -1,0 +1,43 @@
+{
+  "name": "array-to-object",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/array-to-object/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/array-to-object",
+        "main": "packages/array-to-object/src/index.ts",
+        "tsConfig": "packages/array-to-object/tsconfig.lib.json",
+        "assets": [
+          "packages/array-to-object/*.md"
+        ]
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node tools/scripts/publish.mjs array-to-object {args.ver} {args.tag}"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/array-to-object/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

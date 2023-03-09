@@ -8,6 +8,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -19,6 +20,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mottive/array-to-object": [
+        "packages/array-to-object/src/index.ts"
+      ],
       "@mottive/engine": [
         "packages/engine/src/index.ts"
       ],

@@ -1,3 +1,3 @@
-import groupArray = require("group-array");
+import { arrayToObject } from "@mottive/array-to-object";
 
-export const group = groupArray
+export const group = arrayToObject
