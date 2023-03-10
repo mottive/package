@@ -13,3 +13,11 @@ export function headerOf<T extends Message>(t:Type<T>) : T{
 export function headerOfHandler<T extends Handler<any>>(t:Type<T>) : Message {
     return headerOf(handlerOf(t).message)
 }
+
+export function messageOfType<T extends Message>(t:Type<T>) : T{
+    return new t
+}
+
+export function messageOfHandlerType<T extends Handler<any>>(t:Type<T>) : Message {
+    return messageOfType(handlerOf(t).message)
+}
