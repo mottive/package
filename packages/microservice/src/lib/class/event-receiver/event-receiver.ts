@@ -19,7 +19,7 @@ export abstract class EventReceiver{
 
         receiver.onAny((event:string|string[], data) => {
 
-            const events = []
+            const events:Array<string> = []
 
             if( !Array.isArray(event) ){
                 events.push(event)

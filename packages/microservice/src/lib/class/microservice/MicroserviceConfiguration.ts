@@ -36,6 +36,8 @@ export class MicroserviceConfiguration{
 
     initialize(){
 
+        console.log('init micro')
+
         if(this.is.server){
             this.server = new Server(this)
             this.events.connectToEventListener( this.server.events )
